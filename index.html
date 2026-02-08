@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let numbers = [10, 20, 30, "test", "Test2"];
+
+      // console.log(numbers);
+
+      let numbers = new Array(10, 20, 30, 40, 50, 60);
+
+      // console.log(numbers.includes(20));
+
+      // console.log(numbers[10]);
+
+      // console.log(numbers.indexOf(20));
+      // console.log(numbers.indexOf(20, 2));
+
+      // console.log(numbers.splice(1, 2)); //[20,30]
+
+      // console.log(numbers.splice(2, 3)); //[30,40,50];
+
+      // numbers.splice(4, 0, 45);
+
+      // const numbersString = numbers.join("*");
+      // console.log(numbersString);
+      // console.log(numbers);
+
+      // let greetings = ["good", "morning", "hello"];
+
+      // console.log(greetings.join(", "));
+
+      // let nums = [1, 2, 3];
+
+      // let doubled = nums.map(function (item, index, arr) {
+      //   return item * item;
+      // });
+
+      // console.log(nums);
+      // console.log(doubled);
+
+      // let nums = [1, 2, 3, 4];
+
+      // let evenNumbers = nums.filter(function (item) {
+      //   return item % 2 === 0;
+      // });
+
+      // console.log(evenNumbers);
+
+      // const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+      // const result = words.filter((item, index, arr) => item.length > 6);
+      // console.log(result);
+
+      // const nums = [5, 10, 15];
+
+      // const res = nums.filter(function (item) {
+      //   return item > 5;
+      // });
+
+      // console.log(res);
+
+      // let nums = [1, 2, 3, 4, 5];
+
+      // let res = nums.reduce(function (sum, item, index, arr) {
+      //   console.log("item is ", item);
+      //   console.log("sum is ", sum);
+      //   console.log("**************");
+      //   return item + sum;
+      // }, 0);
+
+      // console.log(res);
+
+      // const a = ["js", "html", "css"];
+
+      // const res = a.reduce(function (acc, str) {
+      //   debugger;
+      //   console.log("acc is", acc);
+      //   console.log("str is", str);
+
+      //   const len = str.length + acc;
+      //   return len;
+      // }, 0);
+
+      // console.log(res);
+
+      // const products = [
+      //   { name: "Shirt", price: 20 },
+      //   { name: "Shoes", price: 50 },
+      //   { name: "Hat", price: 15 },
+      // ];
+
+      // // Use reduce() with an initial value of 0 for totalPrice
+      // const totalPriceReduce = products.reduce(function (sum, item) {
+      //   debugger;
+
+      //   console.log(sum);
+      //   console.log(item);
+
+      //   const total = sum + item.price;
+
+      //   return total;
+      // }, 0);
+
+      // console.log("Total price (reduce):", totalPriceReduce); // Output: Total price (reduce): 85
+      // let nums = [1, 3, 5];
+      // console.log(nums.every((n) => n > 0));
+
+      // const person = {
+      //   name: "muthu",
+      //   age: 28,
+      // };
+
+      // console.log(person);
+
+      //
+
+      // const person = new Object();
+
+      // person.name = "muthu";
+      // person.age = 45;
+
+      // console.log(person);
+
+      // function Person(name, dob) {
+      //   this.fname = name;
+      //   this.personDob = dob;
+
+      //   // this.calcAge = function () {
+      //   //   return new Date().getFullYear() - this.personDob;
+      //   // };
+      // }
+
+      // Person.prototype.calcAge = function () {
+      //   return new Date().getFullYear() - this.personDob;
+      // };
+
+      // const person1 = new Person("muthu", 1997);
+      // const person2 = new Person("kumar", 1999);
+
+      // console.log(person1);
+      // console.log(person2);
+      // console.log(person1.calcAge());
+      // console.log(person2.calcAge());
+
+      // class Person {
+      //   constructor(name, dob) {
+      //     this.fname = name;
+      //     this.personDob = dob;
+      //   }
+
+      //   calcAge() {
+      //     return new Date().getFullYear() - this.personDob;
+      //   }
+      // }
+
+      // const person1 = new Person("muthu", 1997);
+      // const person2 = new Person("kumar", 1999);
+
+      // console.log(person1);
+      // console.log(person2);
+
+      // console.log(person1.calcAge());
+      // console.log(person2.calcAge());
+
+      // const basePerson = {
+      //   greet() {
+      //     console.log("hello");
+      //   },
+      // };
+
+      // console.log(basePerson);
+      // console.log(basePerson.greet());
+
+      // const person = Object.create(basePerson);
+      // person.name = "muthu";
+
+      // console.log(person);
+
+      // const carPrototype = {
+      //   start() {
+      //     console.log("Car started");
+      //   },
+      // };
+
+      // const car1 = Object.create(carPrototype);
+      // car1.brand = "Toyota";
+
+      // console.log(car1);
+
+      let user = { name: "Arun", age: 25 };
+
+      console.log(user.name);
+      console.log(user.age);
+
+      console.log(user);
+
+      for (let key in user) {
+        console.log("key is ", key);
+        console.log("value is ", user[key]);
+      }
+    </script>
+  </body>
+</html>
